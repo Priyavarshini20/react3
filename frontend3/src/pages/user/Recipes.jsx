@@ -6,7 +6,7 @@ const Recipes = () => {
 
     return (
         <div className="container">
-            {/* show each of the job as a tailwind styled card */}
+            {/* show each of the recipe as a tailwind styled card */}
             {recipes.map((recipe) => (
                 <div key={recipe._id} className="bg-white shadow-md rounded p-8 m-4">
                     <h2 className="text-2xl font-bold text-gray-800">{recipe.title}</h2>
@@ -34,7 +34,7 @@ const Recipes = () => {
                     </div>
 
                     <div className="mt-4">
-                        {job.skills.map((skill) => (
+                        {recipe.skills.map((skill) => (
                             <span key={skill} className="bg-gray-200 text-gray-800 text-sm p-2 m-1 rounded">{skill}</span>
                         ))}
                     </div>
@@ -44,4 +44,4 @@ const Recipes = () => {
     )
 }
 
-export default Jobs;
+export default Recipes;
